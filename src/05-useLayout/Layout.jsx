@@ -1,7 +1,7 @@
 import { useCounter ,useFetch} from "../hooks";
-import { LoadingQuote,Quote } from "./";
+import { LoadingQuote,Quote } from "../03-examples";
 
-export const MultipleCustomHooks = () => {
+export const Layout = () => {
   // Llamada a la API con el contador
   const { counter, increment } = useCounter(1);
   const { data, isLoading, hasError } = useFetch(`https://dragonball-api.com/api/characters/${counter}`);
